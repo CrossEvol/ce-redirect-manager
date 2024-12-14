@@ -1,11 +1,11 @@
 {
   "extensionDescription": {
     "description": "Extension description",
-    "message": "Chrome extension boilerplate developed with Vite, React and Typescript"
+    "message": "Redirect manager as Chrome extension developed with Vite, React and Typescript"
   },
   "extensionName": {
     "description": "Extension name",
-    "message": "Chrome extension boilerplate"
+    "message": "CE-Redirect-Manager"
   },
   "toggleTheme": {
     "message": "Toggle theme"
