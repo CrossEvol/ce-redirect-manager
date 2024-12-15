@@ -51,7 +51,12 @@ function handlePageRedirectPage(tab: chrome.tabs.Tab, url: string, dataTables: R
         }
 
         // Match redirect
-        if (urlBlocked.host == hostCurrentUrl || 'www.' + urlBlocked.host == hostCurrentUrl) {
+        if (
+          urlBlocked.host == hostCurrentUrl ||
+          'www.' + urlBlocked.host == hostCurrentUrl ||
+          hostCurrentUrl.startsWith(urlBlocked.host) ||
+          hostCurrentUrl.startsWith('www.' + urlBlocked.host)
+        ) {
           console.log('currentURL match => update');
           chrome.tabs.update(tab.id!, { url: dataTables[i].redirectTo });
         } else {
