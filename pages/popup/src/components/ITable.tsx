@@ -3,9 +3,9 @@ import localforage from 'localforage';
 import React from 'react';
 import { IoBan } from 'react-icons/io5';
 import { MdOutlineDeleteForever, MdRestore } from 'react-icons/md';
-import { ChangeCountAtom } from './atom';
-import { FORAGE_KEY } from './constant';
-import { RedirectItem } from './type';
+import { ChangeCountAtom } from '../atom';
+import { FORAGE_KEY } from '../constant';
+import { RedirectItem } from '../type';
 
 const ITable = () => {
   const [changeCount, setChangeCount] = useAtom(ChangeCountAtom);

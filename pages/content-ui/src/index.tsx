@@ -1,11 +1,9 @@
-import { createRoot } from 'react-dom/client';
-import App from '@src/App';
 import tailwindcssOutput from '../dist/tailwind-output.css?inline';
 
 const root = document.createElement('div');
 root.id = 'chrome-extension-boilerplate-react-vite-content-view-root';
 
-document.body.append(root);
+// document.body.append(root);
 
 const rootIntoShadow = document.createElement('div');
 rootIntoShadow.id = 'shadow-root';
@@ -30,4 +28,4 @@ if (navigator.userAgent.includes('Firefox')) {
 }
 
 shadowRoot.appendChild(rootIntoShadow);
-createRoot(rootIntoShadow).render(<App />);
+// createRoot(rootIntoShadow).render(<App />);
