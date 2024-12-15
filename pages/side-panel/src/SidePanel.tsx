@@ -1,6 +1,6 @@
-import '@src/SidePanel.css';
 import { useStorage, withErrorBoundary, withSuspense } from '@extension/shared';
 import { exampleThemeStorage } from '@extension/storage';
+import '@src/SidePanel.css';
 import type { ComponentPropsWithoutRef } from 'react';
 
 const SidePanel = () => {
@@ -20,6 +20,7 @@ const SidePanel = () => {
           Edit <code>pages/side-panel/src/SidePanel.tsx</code>
         </p>
         <ToggleButton>Toggle theme</ToggleButton>
+        <div>Hello, side-panel</div>
       </header>
     </div>
   );

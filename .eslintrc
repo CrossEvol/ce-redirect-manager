@@ -22,7 +22,14 @@
     "ecmaVersion": "latest",
     "sourceType": "module",
   },
-  "plugins": ["react", "@typescript-eslint", "react-hooks", "import", "jsx-a11y", "prettier"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "import",
+    "jsx-a11y",
+    "prettier"
+  ],
   "settings": {
     "react": {
       "version": "detect",
@@ -32,9 +39,24 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "@typescript-eslint/consistent-type-imports": "error",
+    "tailwindcss/no-custom-classname": [
+      true,
+      {
+        "callees": [],
+        "config": {},
+        "cssFiles": [],
+        "cssFilesRefreshRate": 10,
+        "skipClassAttribute": true,
+        "tags": [],
+        "whitelist": [],
+      }
+    ]
   },
   "globals": {
     "chrome": "readonly",
   },
-  "ignorePatterns": ["watch.js", "dist/**"],
+  "ignorePatterns": [
+    "watch.js",
+    "dist/**"
+  ],
 }

@@ -1,7 +1,7 @@
-import '@src/Options.css';
 import { useStorage, withErrorBoundary, withSuspense } from '@extension/shared';
 import { exampleThemeStorage } from '@extension/storage';
 import { Button } from '@extension/ui';
+import '@src/Options.css';
 
 const Options = () => {
   const theme = useStorage(exampleThemeStorage);
@@ -21,6 +21,7 @@ const Options = () => {
       <Button className="mt-4" onClick={exampleThemeStorage.toggle} theme={theme}>
         Toggle theme
       </Button>
+      <div>Hello, options</div>
     </div>
   );
 };
